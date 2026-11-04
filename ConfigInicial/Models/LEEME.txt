@@ -1,0 +1,21 @@
+MODELOS XOCHIMILCO - CORREGIDOS PARA VISUAL STUDIO 2022 / ASSIMP
+
+QUE SE CORRIGIO
+- Causa del "todo negro": en cada .obj las lineas "usemtl" usaban nombres
+  (agua, madera, hojas, verde...) que NO existian en el .mtl, donde solo
+  habia "newmtl material0". Assimp no podia enlazar el material, usaba uno
+  por defecto SIN textura y todo se veia negro.
+  Ahora cada .obj usa "usemtl material0" y el .mtl enlaza su textura
+  (map_Kd <modelo>_diffuse.png).
+- Todas las caras estan triangularizadas (antes habia poligonos de hasta 24
+  vertices), con normales (vn) coherentes con el giro de cada triangulo.
+- Rutas relativas simples: cada .obj, .mtl y .png quedan en la MISMA carpeta.
+
+INSTALACION
+1. Cierra el programa.
+2. Respalda tu carpeta Models actual.
+3. Copia TODO el contenido de esta carpeta Models dentro de la carpeta
+   Models de tu proyecto (sustituyendo los archivos).
+4. Directorio de trabajo en Visual Studio: $(ProjectDir)
+   (Proyecto > Propiedades > Depuracion > Directorio de trabajo).
+5. Limpia y recompila (Compilar > Limpiar solucion, luego Recompilar).

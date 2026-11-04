@@ -1,0 +1,8 @@
+newmtl material0
+Ka 0.30 0.30 0.30
+Kd 1.00 1.00 1.00
+Ks 0.10 0.10 0.10
+Ns 24.0
+d 1.0
+illum 2
+map_Kd luna_diffuse.png
