@@ -1,0 +1,34 @@
+# Proyect_Grafica_Xochimilco
+
+Abrir Proyect_Grafica_Xochimilco.sln con Visual Studio 2022.
+Configuracion: Debug o Release. Plataforma: x86.
+Compilar: Ctrl+Mayus+B. Ejecutar: F5 o Ctrl+F5.
+
+Se utiliza MSVC v143 y Windows SDK 10.0. Las bibliotecas incluidas son de 32 bits.
+El directorio de trabajo del depurador es ConfigInicial para encontrar Models, images y Shader.
+Los ejecutables se generan en bin\Win32\Debug y bin\Win32\Release.
+Las bibliotecas antiguas pueden mostrar advertencias de enlace y de simbolos PDB.
+
+Arquitectura de la Fase 1:
+- main.cpp: inicializa GLFW/GLEW, registra callbacks y ejecuta el loop.
+- SceneManager: camara, modelos, estado de la escena, movimiento y navegacion.
+- LightManager: luz direccional, cuatro luces puntuales y parpadeo temporal.
+- Renderer: shaders, recursos OpenGL, transformaciones y dibujo de la escena.
+
+Fase 2:
+- Shader/water.vs calcula el oleaje en GPU con `time`, desplazamiento vertical y normales analiticas.
+- Shader/water.frag anima las coordenadas UV y aplica color, reflejo Fresnel y brillos del agua.
+- El agua utiliza su propio programa de shaders; el resto de la escena conserva el shader de iluminacion.
+
+Fase 3:
+- SceneManager usa splines ciclicas de Catmull-Rom para las posiciones y los giros de las trajineras.
+- Renderer compone el altar como nodo padre y hereda su transformacion en flores, calaveras y las cinco veladoras de la ofrenda.
+
+Fase 4:
+- SceneManager calcula la distancia euclidiana entre la camara y la Isla de la Ofrenda.
+- Al entrar a menos de 3 unidades se muestra dentro de la ventana un panel con una explicacion documentada del sincretismo cultural y del patrimonio vivo de Xochimilco.
+
+Expansion visual:
+- El mundo usa una transformacion raiz de escala 3.0 para ampliar islas, agua, puentes y objetos hijos.
+- SceneManager genera seis chinampas perifericas con isla, borde, cuatro arboles, rocas y flores.
+- Los mapas difusos de los modelos se asignan explicitamente desde Models/*_diffuse.png y se vinculan al sampler material.diffuse.

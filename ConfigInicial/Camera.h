@@ -120,12 +120,17 @@ public:
 		return this->zoom;
 	}
 
-	glm::vec3 GetPosition()
+	void SetPosition(const glm::vec3& newPosition)
+	{
+		this->position = newPosition;
+	}
+
+	glm::vec3 GetPosition() const
 	{
 		return this->position;
 	}
 
-	glm::vec3 GetFront()
+	glm::vec3 GetFront() const
 	{
 		return this->front;
 	}

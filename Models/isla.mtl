@@ -1,0 +1,22 @@
+# Blender 5.2.3 LTS MTL File: 'trajinera_blender.blend'
+# www.blender.org
+
+newmtl Chinampa_Pasto
+Ns 6.399997
+Ka 1.000000 1.000000 1.000000
+Kd 0.035000 0.160000 0.045000
+Ks 0.180000 0.180000 0.180000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Chinampa_TierraOscura
+Ns 0.399999
+Ka 1.000000 1.000000 1.000000
+Kd 0.160000 0.055000 0.018000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

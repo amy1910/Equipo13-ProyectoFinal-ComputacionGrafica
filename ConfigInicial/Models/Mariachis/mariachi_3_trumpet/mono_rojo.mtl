@@ -1,0 +1,6 @@
+newmtl mariachi_3_trumpet__mono_rojo
+Ka 0.10 0.10 0.10
+Kd 0.9000 0.1200 0.1500
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd mono_rojo.png

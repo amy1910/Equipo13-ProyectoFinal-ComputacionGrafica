@@ -1,0 +1,13 @@
+newmtl mariachi_5_guitar__ebano
+Ka 0.10 0.10 0.10
+Kd 0.0250 0.0120 0.0080
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd ebano.png
+
+newmtl mariachi_5_guitar__madera_guitarra
+Ka 0.10 0.10 0.10
+Kd 0.2000 0.0350 0.0120
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd madera_guitarra.png

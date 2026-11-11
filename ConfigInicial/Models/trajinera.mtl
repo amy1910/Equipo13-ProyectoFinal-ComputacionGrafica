@@ -1,8 +1,72 @@
-newmtl material0
-Ka 0.30 0.30 0.30
-Kd 1.00 1.00 1.00
-Ks 0.10 0.10 0.10
-Ns 24.0
-d 1.0
+# Blender 5.2.3 LTS MTL File: 'trajinera_blender.blend'
+# www.blender.org
+
+newmtl Amarillo_Vibrante
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Azul_Vibrante
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Crema
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Madera_Oscura
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Madera_Terracota
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Rojo_Vibrante
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd trajinera_diffuse.png
+
+newmtl Verde_Vibrante
+Ns 384.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
 illum 2
 map_Kd trajinera_diffuse.png

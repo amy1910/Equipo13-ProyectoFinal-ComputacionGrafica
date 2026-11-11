@@ -1,0 +1,34 @@
+newmtl calaverita_blanco
+Ka 0.08 0.08 0.08
+Kd 0.9200 0.8800 0.9600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd calaverita_blanco.png
+
+newmtl calaverita_gris
+Ka 0.08 0.08 0.08
+Kd 0.3800 0.4000 0.4600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd calaverita_gris.png
+
+newmtl moribunda_lila
+Ka 0.08 0.08 0.08
+Kd 0.7200 0.2200 0.5800
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd moribunda_lila.png
+
+newmtl moribunda_morado
+Ka 0.08 0.08 0.08
+Kd 0.2500 0.0500 0.3600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd moribunda_morado.png
+
+newmtl moribunda_oro
+Ka 0.08 0.08 0.08
+Kd 0.9500 0.4800 0.0600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd moribunda_oro.png

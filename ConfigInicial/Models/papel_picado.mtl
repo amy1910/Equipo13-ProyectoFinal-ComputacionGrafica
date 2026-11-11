@@ -1,8 +1,72 @@
-newmtl material0
-Ka 0.30 0.30 0.30
-Kd 1.00 1.00 1.00
-Ks 0.10 0.10 0.10
-Ns 24.0
-d 1.0
+# Blender 5.2.3 LTS MTL File: 'trajinera_blender.blend'
+# www.blender.org
+
+newmtl Cuerda_Lazo
+Ns 32.400002
+Ka 1.000000 1.000000 1.000000
+Kd 0.160000 0.045000 0.012000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Papel_Amarillo
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
 illum 2
 map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png
+
+newmtl Papel_AzulRey
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png
+
+newmtl Papel_Morado
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png
+
+newmtl Papel_Naranja
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png
+
+newmtl Papel_RosaMexicano
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png
+
+newmtl Papel_Verde
+Ns 39.999996
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd papel_picado_diffuse.png
+map_d papel_picado_diffuse.png

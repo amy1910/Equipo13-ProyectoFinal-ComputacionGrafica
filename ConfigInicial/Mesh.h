@@ -31,7 +31,7 @@ struct Vertex
 
 struct Texture
 {
-	GLuint id;
+	GLuint id = 0;
 	string type;
 	aiString path;
 };
@@ -43,14 +43,17 @@ public:
 	vector<Vertex> vertices;
 	vector<GLuint> indices;
 	vector<Texture> textures;
+	glm::vec3 materialColor{1.0f, 1.0f, 1.0f};
 
 	/*  Functions  */
 	// Constructor
-	Mesh(vector<Vertex> vertices, vector<GLuint> indices, vector<Texture> textures)
+	Mesh(vector<Vertex> vertices, vector<GLuint> indices, vector<Texture> textures,
+		glm::vec3 materialColor = glm::vec3(1.0f))
 	{
 		this->vertices = vertices;
 		this->indices = indices;
 		this->textures = textures;
+		this->materialColor = materialColor;
 
 		// Now that we have all the required data, set the vertex buffers and its attribute pointers.
 		this->setupMesh();
@@ -62,6 +65,8 @@ public:
 		// Bind appropriate textures
 		GLuint diffuseNr = 1;
 		GLuint specularNr = 1;
+		bool diffuseSamplerAssigned = false;
+		bool specularSamplerAssigned = false;
 
 		for (GLuint i = 0; i < this->textures.size(); i++)
 		{
@@ -74,10 +79,20 @@ public:
 			if (name == "texture_diffuse")
 			{
 				ss << diffuseNr++; // Transfer GLuint to stream
+				if (!diffuseSamplerAssigned)
+				{
+					glUniform1i(glGetUniformLocation(shader.Program, "material.diffuse"), i);
+					diffuseSamplerAssigned = true;
+				}
 			}
 			else if (name == "texture_specular")
 			{
 				ss << specularNr++; // Transfer GLuint to stream
+				if (!specularSamplerAssigned)
+				{
+					glUniform1i(glGetUniformLocation(shader.Program, "material.specular"), i);
+					specularSamplerAssigned = true;
+				}
 			}
 
 			number = ss.str();
@@ -86,6 +101,11 @@ public:
 			// And finally bind the texture
 			glBindTexture(GL_TEXTURE_2D, this->textures[i].id);
 		}
+
+		glUniform3f(glGetUniformLocation(shader.Program, "material.baseColor"),
+			this->materialColor.r, this->materialColor.g, this->materialColor.b);
+		glUniform1i(glGetUniformLocation(shader.Program, "material.hasDiffuseTexture"),
+			diffuseSamplerAssigned ? 1 : 0);
 
 		// Also set each mesh's shininess property to a default value (if you want you could extend this to another mesh property and possibly change this value)
 		glUniform1f(glGetUniformLocation(shader.Program, "material.shininess"), 16.0f);
