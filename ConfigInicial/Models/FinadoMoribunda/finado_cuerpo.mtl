@@ -1,0 +1,48 @@
+newmtl calaverita_gris
+Ka 0.08 0.08 0.08
+Kd 0.3800 0.4000 0.4600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd calaverita_gris.png
+
+newmtl finado_azul
+Ka 0.08 0.08 0.08
+Kd 0.0250 0.0800 0.3000
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_azul.png
+
+newmtl finado_blanco
+Ka 0.08 0.08 0.08
+Kd 0.9300 0.9300 0.8600
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_blanco.png
+
+newmtl finado_naranja
+Ka 0.08 0.08 0.08
+Kd 0.9200 0.2200 0.0250
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_naranja.png
+
+newmtl finado_oro
+Ka 0.08 0.08 0.08
+Kd 0.8600 0.4000 0.0250
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_oro.png
+
+newmtl finado_rojo
+Ka 0.08 0.08 0.08
+Kd 0.6400 0.0400 0.0250
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_rojo.png
+
+newmtl finado_verde
+Ka 0.08 0.08 0.08
+Kd 0.0800 0.3800 0.1700
+Ks 0.35 0.35 0.35
+Ns 32
+map_Kd finado_verde.png

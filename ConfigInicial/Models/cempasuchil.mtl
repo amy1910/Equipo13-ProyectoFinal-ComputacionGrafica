@@ -1,8 +1,22 @@
-newmtl material0
-Ka 0.30 0.30 0.30
-Kd 1.00 1.00 1.00
-Ks 0.10 0.10 0.10
-Ns 24.0
-d 1.0
+# Blender 5.2.3 LTS MTL File: 'trajinera_blender.blend'
+# www.blender.org
+
+newmtl Cempasuchil_Flor_Naranja
+Ns 90.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.960000 0.190000 0.006000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
 illum 2
-map_Kd cempasuchil_diffuse.png
+
+newmtl Cempasuchil_Follaje_Verde
+Ns 14.400002
+Ka 1.000000 1.000000 1.000000
+Kd 0.018000 0.160000 0.022000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
