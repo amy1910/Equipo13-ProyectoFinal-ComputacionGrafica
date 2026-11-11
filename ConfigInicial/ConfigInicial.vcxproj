@@ -13,17 +13,33 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="SceneTypes.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="PathUtils.h" />
+    <ClInclude Include="MariachiFSM.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader\lamp.frag" />
     <None Include="Shader\lamp.vs" />
     <None Include="Shader\lighting.frag" />
     <None Include="Shader\lighting.vs" />
-    <None Include="Shader\modelLoading.frag" />
-    <None Include="Shader\modelLoading.vs" />
+    <None Include="Shader\water.frag" />
+    <None Include="Shader\water.vs" />
+    <None Include="Shader\ui.frag" />
+    <None Include="Shader\ui.vs" />
+    <None Include="Shader\skybox.frag" />
+    <None Include="Shader\skybox.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Xochimilco_Dia_de_Muertos_corregido.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="LightManager.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Renderer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -97,6 +113,22 @@
     <LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PostBuildEvent>
+      <Command>powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(ProjectDir)SyncAssets.ps1" -RuntimeModels "$(ProjectDir)Models" -OutputModels "$(OutDir)Models" -SourceShader "$(ProjectDir)Shader" -OutputShader "$(OutDir)Shader"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PostBuildEvent>
+      <Command>powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(ProjectDir)SyncAssets.ps1" -RuntimeModels "$(ProjectDir)Models" -OutputModels "$(OutDir)Models" -SourceShader "$(ProjectDir)Shader" -OutputShader "$(OutDir)Shader"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
