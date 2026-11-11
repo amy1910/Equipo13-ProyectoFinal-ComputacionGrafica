@@ -1,0 +1,10 @@
+# Proyect_Grafica_Xochimilco
+
+Abrir Proyect_Grafica_Xochimilco.sln con Visual Studio 2022.
+Configuracion: Debug o Release. Plataforma: x86.
+Compilar: Ctrl+Mayus+B. Ejecutar: F5 o Ctrl+F5.
+
+Se utiliza MSVC v143 y Windows SDK 10.0. Las bibliotecas incluidas son de 32 bits.
+El directorio de trabajo del depurador es ConfigInicial para encontrar Models, images y Shader.
+Los ejecutables se generan en bin\Win32\Debug y bin\Win32\Release.
+Las bibliotecas antiguas pueden mostrar advertencias de enlace y de simbolos PDB.
