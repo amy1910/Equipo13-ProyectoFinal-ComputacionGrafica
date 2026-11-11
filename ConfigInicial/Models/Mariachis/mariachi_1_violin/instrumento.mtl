@@ -1,0 +1,13 @@
+newmtl mariachi_1_violin__ebano
+Ka 0.10 0.10 0.10
+Kd 0.0250 0.0120 0.0080
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd ebano.png
+
+newmtl mariachi_1_violin__madera_violin
+Ka 0.10 0.10 0.10
+Kd 0.3000 0.0650 0.0180
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd madera_violin.png

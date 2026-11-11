@@ -1,0 +1,13 @@
+newmtl mariachi_5_guitar__charro_negro
+Ka 0.10 0.10 0.10
+Kd 0.9200 0.9000 0.8500
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd charro_negro.png
+
+newmtl mariachi_5_guitar__piel_manos
+Ka 0.10 0.10 0.10
+Kd 0.8000 0.4800 0.3000
+Ks 0.30 0.30 0.30
+Ns 32
+map_Kd piel_manos.png

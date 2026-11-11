@@ -26,6 +26,11 @@ x86/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
+!External Libraries/GLEW/
+!External Libraries/GLEW/lib/
+!External Libraries/GLEW/lib/Release/
+!External Libraries/GLEW/lib/Release/Win32/
+!External Libraries/GLEW/lib/Release/Win32/glew32.lib
 bld/
 [Bb]in/
 [Oo]bj/
